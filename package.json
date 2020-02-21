@@ -4,7 +4,8 @@
   "description": "A GraphQL wrapper for swapi.com",
   "contributors": [
     "Nicholas Schrock <schrockn@fb.com>",
-    "Daniel Schafer <dschafer@fb.com>"
+    "Daniel Schafer <dschafer@fb.com>",
+    "Huy Nguyen <me@huy.dev>"
   ],
   "license": "BSD-3-Clause",
   "homepage": "https://github.com/graphql/swapi-graphql",
