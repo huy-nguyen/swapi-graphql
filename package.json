@@ -1,6 +1,6 @@
 {
   "name": "swapi-graphql-schema",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A GraphQL wrapper for swapi.com",
   "contributors": [
     "Nicholas Schrock <schrockn@fb.com>",
@@ -51,9 +51,9 @@
   "main": "lib/index.js",
   "types": "./index.d.ts",
   "files": [
-    "./lib",
-    "./index.d.ts",
-    "./schema.graphql"
+    "/lib",
+    "/index.d.ts",
+    "/schema.graphql"
   ],
   "dependencies": {
     "aws-serverless-express": "^3.3.6",
