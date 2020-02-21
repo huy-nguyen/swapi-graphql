@@ -1,0 +1,10 @@
+version: "2"
+tasks:
+  npm-auth:
+    # This only needs to run once:
+    cmds:
+      - docker-compose run --rm npm-auth
+  publish:
+    cmds:
+      - docker-compose run --rm publish
+

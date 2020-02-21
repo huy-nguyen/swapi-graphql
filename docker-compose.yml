@@ -1,0 +1,20 @@
+version: "2.4"
+services:
+  npm-auth:
+    command: npm login
+    image: node:12.16.1
+    user: node
+    volumes:
+      - home:/home/node:delegated
+    working_dir: /home/node
+  publish:
+    command: npm publish
+    image: node:12.16.1
+    user: node
+    volumes:
+      - home:/home/node:delegated
+      - ./:/home/node/code:delegated
+    working_dir: /home/node/code
+
+volumes:
+  home:
