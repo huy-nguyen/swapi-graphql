@@ -48,6 +48,7 @@
     "store-schema": "babel-node scripts/store-schema.js"
   },
   "main": "lib/index.js",
+  "types": "./index.d.ts",
   "files": [
     "./lib",
     "./index.d.ts",
