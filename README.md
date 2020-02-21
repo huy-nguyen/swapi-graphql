@@ -1,44 +1,10 @@
-SWAPI GraphQL Wrapper
+SWAPI GraphQL Wrapper Schema
 =====================
 
-A wrapper around [SWAPI](http://swapi.co) built using GraphQL converting it into [this schema](schema.graphql).
+This is a fork of the official [Star Wars GraphQL API repo](https://github.com/graphql/swapi-graphql).
+This fork is necessary because of the following problems with that repo's npm package ([`swapi-graphql`](https://www.npmjs.com/package/swapi-graphql)):
+- The published package has not been updated in a long time and does not track the repo's current code.
+- The schema it exports is unusable because it has a direct dependency on `graphql`, which leads to "multiple instances of GraphQL found" error messages.
+- Its `postinstall` hook causes installation with Yarn v2 to fail, probably because of Plug-n-Play.
 
-Uses:
-
-* [graphql-js](https://github.com/graphql/graphql-js) - a JavaScript GraphQL runtime.
-* [DataLoader](https://github.com/graphql/dataloader) - for coalescing and caching fetches.
-* [express-graphql](https://github.com/graphql/express-graphql) - to provide HTTP access to GraphQL.
-* [aws-serverless-express](https://github.com/awslabs/aws-serverless-express) - to use `express-graphql` on aws lambda.
-* [GraphiQL](https://github.com/graphql/graphiql) - for easy exploration of this GraphQL server.
-
-Try it out at: http://graphql.org/swapi-graphql
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/graphql/swapi-graphql)
-
-## Getting Started
-
-Install dependencies with
-
-```sh
-yarn
-```
-
-## SWAPI Wrapper
-
-The SWAPI wrapper is in `./swapi`. It can be tested with:
-
-```sh
-yarn test
-```
-
-## Local Server
-
-A local express server is in `./server`. It can be run with:
-
-```sh
-yarn build # Only if you changed something
-yarn start
-```
-
-A GraphiQL instance will be opened at http://localhost:8080/ (or similar; the actual port number will be printed to the console) to explore the API.
+This fork publishes a package called [`swapi-graphql-schema`](https://www.npmjs.com/package/swapi-graphql-schema) whose `default` export is the GraphQL schema.
