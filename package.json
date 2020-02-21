@@ -30,7 +30,6 @@
     "react": "global:React"
   },
   "scripts": {
-    "postinstall": "yarn run download && yarn run build",
     "test": "yarn run lint && yarn run check && yarn run testonly",
     "start": "node lib/server",
     "watch": "babel scripts/watch.js | node",
