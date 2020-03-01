@@ -9,6 +9,7 @@ export default {
     file: 'lib/index.js',
     format: 'cjs',
   },
+  external: ["graphql"],
   plugins: [
     json(),
     resolve(),
