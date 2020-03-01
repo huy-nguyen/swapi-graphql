@@ -1,10 +1,14 @@
 {
   "presets": [
-    ["env", { "targets": { "node": "current" }}]
-  ], 
-  "plugins": [
-    "transform-flow-strip-types", 
-    "syntax-async-functions",
-    "babel-plugin-syntax-object-rest-spread"
+    "@babel/preset-flow",
+    [
+      "@babel/preset-env",
+      {
+        "modules": false,
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
   ]
 }
