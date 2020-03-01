@@ -9,7 +9,7 @@ export default {
     file: 'lib/index.js',
     format: 'cjs',
   },
-  external: ["graphql", "graphql-relay"],
+  external: ["graphql", "graphql-relay", "dataloader"],
   plugins: [
     json(),
     resolve(),
