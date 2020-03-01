@@ -35,3 +35,11 @@ app.use(
 
 app.listen(5000);
 ```
+
+## Publish
+
+This repo uses [go-task](https://taskfile.dev) as the task runner.
+
+- Run `task npm-auth` to log in to npm.
+This only needs to be run once and your npm credentials will be stored in a local Docker volume.
+- Run `task publish` to publish the package.
