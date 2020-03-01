@@ -23,6 +23,7 @@ export default {
           'connectionDefinitions',
           'connectionArgs',
           'connectionFromArray',
+          'globalIdField',
         ],
       },
     }),

@@ -14,16 +14,16 @@ import type { GraphQLObjectType } from 'graphql';
 
 import { nodeDefinitions, fromGlobalId } from 'graphql-relay';
 
+import FilmType from './types/film';
+import PersonType from './types/person';
+import PlanetType from './types/planet';
+import SpeciesType from './types/species';
+import StarshipType from './types/starship';
+import VehicleType from './types/vehicle';
 /**
  * Given a "type" in SWAPI, returns the corresponding GraphQL type.
  */
 export function swapiTypeToGraphQLType(swapiType: string): GraphQLObjectType {
-  const FilmType = require('./types/film').default;
-  const PersonType = require('./types/person').default;
-  const PlanetType = require('./types/planet').default;
-  const SpeciesType = require('./types/species').default;
-  const StarshipType = require('./types/starship').default;
-  const VehicleType = require('./types/vehicle').default;
 
   switch (swapiType) {
     case 'films':
